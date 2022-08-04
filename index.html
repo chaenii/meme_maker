@@ -10,16 +10,21 @@
   <body>
     <canvas></canvas>
     <input id="line-width" type="range" min="1" max="10" value="5" step="0.5" />
-    <input type="color" id="color" />
-    <div class="color-option" style="background-color: #ffdde7" data-color="#ffdde7"></div>
-    <div class="color-option" style="background-color: #a28e98" data-color="#a28e98"></div>
-    <div class="color-option" style="background-color: #ff7a92" data-color="#ff7a92"></div>
-    <div class="color-option" style="background-color: #d9b7f3" data-color="#d9b7f3"></div>
-    <div class="color-option" style="background-color: #ab658c" data-color="#ab658c"></div>
-    <div class="color-option" style="background-color: #ffdbaf" data-color="#ffdbaf"></div>
-    <div class="color-option" style="background-color: #bb8a48" data-color="#bb8a48"></div>
-    <div class="color-option" style="background-color: #c6a682" data-color="#c6a682"></div>
-    <div class="color-option" style="background-color: #ff9b57" data-color="#ff9b57"></div>
+    <div>
+      <input type="color" id="color" />
+      <div class="color-option" style="background-color: #ffdde7" data-color="#ffdde7"></div>
+      <div class="color-option" style="background-color: #a28e98" data-color="#a28e98"></div>
+      <div class="color-option" style="background-color: #ff7a92" data-color="#ff7a92"></div>
+      <div class="color-option" style="background-color: #d9b7f3" data-color="#d9b7f3"></div>
+      <div class="color-option" style="background-color: #ab658c" data-color="#ab658c"></div>
+      <div class="color-option" style="background-color: #ffdbaf" data-color="#ffdbaf"></div>
+      <div class="color-option" style="background-color: #bb8a48" data-color="#bb8a48"></div>
+      <div class="color-option" style="background-color: #c6a682" data-color="#c6a682"></div>
+      <div class="color-option" style="background-color: #ff9b57" data-color="#ff9b57"></div>
+    </div>
+    <button id="mode-btn">Fill</button>
+    <button id="destroy-btn">Destroy</button>
+    <button id="eraser-btn">Erase</button>
     <script src="app.js"></script>
   </body>
 </html>
