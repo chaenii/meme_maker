@@ -22,9 +22,25 @@
       <div class="color-option" style="background-color: #c6a682" data-color="#c6a682"></div>
       <div class="color-option" style="background-color: #ff9b57" data-color="#ff9b57"></div>
     </div>
-    <button id="mode-btn">Fill</button>
-    <button id="destroy-btn">Destroy</button>
-    <button id="eraser-btn">Erase</button>
+    <div>
+      <div>
+        <hr />
+        <button id="mode-btn">Fill</button>
+        <button id="destroy-btn">Destroy</button>
+        <button id="eraser-btn">Erase</button>
+        <hr />
+      </div>
+      <div>
+        <input type="file" accept="image/*" id="file" />
+        <hr />
+      </div>
+      <div>
+        <input type="text" placeholder="Write and then double click" id="text" />
+        <hr />
+      </div>
+      <button id="save">Save Image</button>
+      <hr />
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
