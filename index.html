@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas></canvas>
-    <input id="line-width" type="range" min="1" max="10" value="5" step="0.5" />
-    <div>
+    <div class="color-options">
       <input type="color" id="color" />
       <div class="color-option" style="background-color: #ffdde7" data-color="#ffdde7"></div>
       <div class="color-option" style="background-color: #a28e98" data-color="#a28e98"></div>
@@ -22,24 +20,18 @@
       <div class="color-option" style="background-color: #c6a682" data-color="#c6a682"></div>
       <div class="color-option" style="background-color: #ff9b57" data-color="#ff9b57"></div>
     </div>
-    <div>
-      <div>
-        <hr />
-        <button id="mode-btn">Fill</button>
-        <button id="destroy-btn">Destroy</button>
-        <button id="eraser-btn">Erase</button>
-        <hr />
-      </div>
-      <div>
+    <canvas></canvas>
+    <div class="btns">
+      <input id="line-width" type="range" min="1" max="10" value="5" step="0.5" />
+      <button id="mode-btn">🩸 Fill</button>
+      <button id="destroy-btn">💣 Destroy</button>
+      <button id="eraser-btn">❌ Erase</button>
+      <label for="file">
+        🤳 Add Photo
         <input type="file" accept="image/*" id="file" />
-        <hr />
-      </div>
-      <div>
-        <input type="text" placeholder="Write and then double click" id="text" />
-        <hr />
-      </div>
-      <button id="save">Save Image</button>
-      <hr />
+      </label>
+      <input type="text" placeholder="Add Text Here .. :)" id="text" />
+      <button id="save">🖼 Save Image</button>
     </div>
     <script src="app.js"></script>
   </body>
